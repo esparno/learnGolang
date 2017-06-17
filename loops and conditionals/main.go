@@ -40,4 +40,8 @@ func main() {
 	default:
 		fmt.Println("switch case: default")
 	}
+
+	if food:="chocolate"; food == "chocolate" {
+		fmt.Println(food)
+	}
 }
