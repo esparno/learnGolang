@@ -25,4 +25,19 @@ func main() {
 		}
 		k+= 3
 	}
+
+	l := 2
+
+	switch l {
+	case 1 :
+		fmt.Println("switch case: 1")
+	case 2 :
+		fmt.Println("switch case: 2")
+	case 3 :
+		fmt.Println("switch case: 3")
+	case 4 :
+		fmt.Println("switch case: 4")
+	default:
+		fmt.Println("switch case: default")
+	}
 }
