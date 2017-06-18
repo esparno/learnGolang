@@ -24,4 +24,9 @@ func main() {
 	mySlice4 := make([]int, 0, 10)
 	mySlice4 = append(mySlice4, 4,8,10,12,14,16)
 	fmt.Println(mySlice4)
+
+	//create a slice from an array
+	var arr = [5]int {1,2,3,4,5}
+	var mySlice5 = arr[:]
+	fmt.Println(mySlice5)
 }
