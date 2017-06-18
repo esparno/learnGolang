@@ -29,4 +29,5 @@ func main() {
 	var arr = [5]int {1,2,3,4,5}
 	var mySlice5 = arr[:]
 	fmt.Println(mySlice5)
+	fmt.Println(arr)
 }
