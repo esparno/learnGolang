@@ -8,7 +8,8 @@ func main() {
 
 	fmt.Println(b)
 	fmt.Println(*b)
-
+	fmt.Println(a)
+	fmt.Println(&a)
 	*b = 42
 
 	fmt.Println(*b)
