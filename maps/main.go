@@ -8,13 +8,13 @@ func main() {
 	dictionary["Alister"] = "dog"
 	dictionary["Hopsy"] = "rabbit"
 	dictionary["Bartholomew"] = "cat"
-	fmt.Println(dictionary )
+	fmt.Println(dictionary)
 	delete(dictionary, "Hopsy")
 	for key, value := range dictionary {
 		fmt.Println(key, " - ", value)
 	}
 
-	dictionary2 := map[int]int {}
-	fmt.Println(dictionary2	== nil)
+	dictionary2 := map[int]int{}
+	fmt.Println(dictionary2 == nil)
 
 }

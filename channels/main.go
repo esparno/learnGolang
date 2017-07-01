@@ -32,21 +32,19 @@ func main() {
 	//	}
 	//}()
 
-
 	//time.Sleep(time.Second)
-
 
 	var wg sync.WaitGroup
 	wg.Add(2)
-	ch3:= make(chan int)
+	ch3 := make(chan int)
 	go func() {
-		for i:=11; i<=20; i++ {
+		for i := 11; i <= 20; i++ {
 			ch3 <- i
 		}
 		wg.Done()
 	}()
 	go func() {
-		for i:=11; i<=20; i++ {
+		for i := 11; i <= 20; i++ {
 			ch3 <- i
 		}
 		wg.Done()

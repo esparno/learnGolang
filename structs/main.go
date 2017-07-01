@@ -4,13 +4,14 @@ import "fmt"
 
 type Person struct {
 	Firstname string
-	Lastname string
-	Age int
+	Lastname  string
+	Age       int
 }
 type SecretAgent struct {
 	Person
 	LicenseToKill bool
 }
+
 func (p Person) FullName() {
 	fmt.Println(p.Firstname + " " + p.Lastname)
 }

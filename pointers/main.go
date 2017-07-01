@@ -7,9 +7,9 @@ func main() {
 	var b *int = &a
 
 	fmt.Println("b", b)
-	fmt.Println("*b",*b)
-	fmt.Println("a",a)
-	fmt.Println("&a",&a)
+	fmt.Println("*b", *b)
+	fmt.Println("a", a)
+	fmt.Println("&a", &a)
 	*b = 42
 
 	fmt.Println(*b)
