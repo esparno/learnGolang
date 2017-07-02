@@ -5,10 +5,14 @@ import (
 	"net/http"
 	"os"
 	"io"
+	"strings"
 )
 
 func main() {
 	for _, url := range os.Args[1:] {
+		if !strings.HasPrefix("http://", url) {
+			url = "http://" + url
+		}
 		resp, err := http.Get(url)
 		if err != nil {
 			fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
@@ -20,6 +24,7 @@ func main() {
 			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
 			os.Exit(1)
 		}
-		fmt.Printf("%s", b)
+		fmt.Printf("%s\n", b)
+		fmt.Printf("STATUS CODE: %v\n",resp.Status)
 	}
 }
