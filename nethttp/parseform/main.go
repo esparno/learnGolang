@@ -20,6 +20,7 @@ type Dog struct {
 	Age int
 }
 func (d Dog) ServeHTTP(wr http.ResponseWriter, req *http.Request) {
+	wr.Header().Set("ERIN-KEY", "ALISTER")
 	err := req.ParseForm()
 	if err != nil {
 		log.Fatalln(err)
