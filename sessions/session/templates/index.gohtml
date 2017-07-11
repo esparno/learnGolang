@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Index</title>
+</head>
+<body>
+<form action="/" method="post">
+    <input type="email" name="username" placeholder="email"><br>
+    <input type="text" name="firstname" placeholder="first name"><br>
+    <input type="text" name="lastname" placeholder="last name"><br>
+    <input type="submit">
+</form>
+
+{{if .FirstName}}
+<div>
+user: {{.}}
+</div>
+<div>
+<a href="/bar">Go to the bar</a>
+</div>
+{{end}}
