@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+<h1>Index</h1>
+<a href="/account">Account</a>
+{{if .}}
+<div>Hi {{.FirstName}}</div>
+<form action="logout" method="post">
+    <input type="submit" value="Logout">
+</form>
+{{end}}
+</body>
+</html>
